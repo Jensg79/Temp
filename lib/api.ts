@@ -1,3 +1,8 @@
+interface TemperatureResponse {
+  temperature: number;
+  timestamp: string;
+}
+
 export async function fetchTemperatureData(): Promise<TemperatureResponse> {
   const response = await fetch('https://bzrd6i1w.run.nodescript.dev/schule/shelly');
   
